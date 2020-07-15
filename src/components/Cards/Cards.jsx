@@ -53,7 +53,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary" gutterBottom>
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography color="body2">Number of actives</Typography>
+            <Typography color="body2">Total recoveries from covid-19</Typography>
           </CardContent>
         </Grid>
         <Grid item component={Card} xs={12} md={3} className='card deaths'>
@@ -74,7 +74,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Typography color="textSecondary" gutterBottom>
               {new Date(lastUpdate).toDateString()}
             </Typography>
-            <Typography color="body2">Number of recovered</Typography>
+            <Typography color="body2">Number of deaths due to covid-19</Typography>
           </CardContent>
         </Grid>
       </Grid>
